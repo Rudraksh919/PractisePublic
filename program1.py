@@ -1,7 +1,5 @@
 import numpy as np
 
-arr = np.array([1,2,3,4,5]) # Creating Array of Rank 1
+arr3 = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
 
-arr[3] = 6 #Changing value of element at index 4
-
-print(arr.size) # Printing Size of Array
+print(np.array([arr3[0][1:3], arr3[1][1:3]]))
