@@ -1,8 +1,6 @@
 import numpy as np
 
-arr3 = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
-newarr3 = arr3[:2 ,1:3]
+arr=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
 
-newarr3[0,0] =22
+bool_idx1 = (arr%3 == 0)
 
-print(arr3)
