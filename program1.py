@@ -1,8 +1,14 @@
 import numpy as np
 
-x = np.array([[1,2],[3,4]], dtype=np.float64)
-y = np.array([[5,6],[7,8]], dtype=np.float64)
+b = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
 
-v = np.array([9,10])
-w = np.array([11, 12])
+boolb = (b%3 == 0)
+c = np.array([[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]])
+i = 0
+for i in range(4):
+    j=0
+    for j in range(4):
+        if boolb[i,j] == True:
+            c[i,j] = np.array([b[i,j]])
 
+print(c)
