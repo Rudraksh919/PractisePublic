@@ -1,6 +1,8 @@
 import numpy as np
 
-arr=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
+x = np.array([[1,2],[3,4]], dtype=np.float64)
+y = np.array([[5,6],[7,8]], dtype=np.float64)
 
-bool_idx1 = (arr%3 == 0)
+v = np.array([9,10])
+w = np.array([11, 12])
 
